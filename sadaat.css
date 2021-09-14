@@ -1,0 +1,242 @@
+body
+{
+	background-color: wheat;
+}
+li
+{
+	list-style: none;
+}
+#sadaat, #Electrical, #Store
+{
+	font-family: fantasy;
+	font-size: 20px;
+	text-decoration: underline;
+	left: 30px;
+	position: relative;
+	width: 100px;
+}
+#sadaat:Hover, #Electrical:Hover, #Store:Hover
+{
+	
+	color: green;
+}
+#Electrical
+{
+	position: relative;
+	left: 40px;
+}
+#Store
+{
+	position: relative;
+	left: 80px;
+}
+header ul li
+{
+	display: inline-flex;
+	position: relative;
+	left: 50%;
+	top: -60px;
+	font-family: serif;
+	font-size: 20px;
+}
+header a
+{
+	text-decoration: none;
+	color: black;
+}
+header a:Hover
+{
+	text-decoration: line-through;
+	color: green;
+}
+header
+{
+	height: 80px;
+	border-bottom: 3px solid yellowgreen;
+	border-right: 2px solid yellowgreen;
+	border-left: 2px solid yellowgreen;
+	border-style: ridge;
+	width: 98%;
+}
+
+.product1
+{
+	position: absolute;
+	top: 200px;
+	left: 20%;
+	width: 800px;
+	border: 2px dotted whitesmoke;
+}
+.product1 img
+{
+	height: 500px;
+	width: 450px;
+	position: relative;
+}
+.product1 dt
+{
+	font-size: 20px;
+	float: right;
+	position: absolute;
+	left: 58%;
+	text-align: left;
+	display: block;
+	justify-content: center;
+}
+.product2
+{
+	position: absolute;
+	top: 800px;
+	left: 20%;
+	width: 850px;
+
+}
+.product2 img
+{
+	height: 500px;
+	width: 450px;
+
+}
+.product2 dt
+{
+	font-size: 20px;
+	float: right;
+	position: absolute;
+	left: 58%;
+	text-align: left;
+	display: block;
+	justify-content: center;
+}
+h2
+{
+	text-decoration: underline;
+}
+.product1 a,.product2 a, .product3 a
+{
+	color: white;
+	background-color: #008000;
+	width: 200px;
+	height: 60px;
+	border: 1px solid green;
+	position: relative;
+	top: -15px;
+	text-decoration: none;
+	left: 40px;
+}
+select
+{
+	position: relative;
+	top: -15px;
+	height: 40px;
+	border-radius: 5px;
+}
+.product3
+{
+	position: absolute;
+	top: 1400px;
+	left: 20%;
+	width: 850px;
+
+}
+.product3 img
+{
+	height: 500px;
+	width: 450px;
+
+}
+.product3 dt
+{
+	font-size: 20px;
+	float: right;
+	position: absolute;
+	left: 54%;
+	text-align: left;
+	display: block;
+	justify-content: center;
+}
+h2
+{
+	text-decoration: underline;
+}
+.product4
+{
+	position: absolute;
+	top: 1900px;
+	left: 5%;
+	width: 900px;
+
+}
+.product3 img
+{
+	height: 500px;
+	width: 450px;
+
+}
+.product3 dt
+{
+	font-size: 20px;
+	float: right;
+	position: absolute;
+	left: 58%;
+	text-align: left;
+	display: block;
+	justify-content: center;
+}
+h2
+{
+	text-decoration: underline;
+}
+
+footer
+{
+	
+	position:absolute;
+	top: 145em;
+	left: 120px;
+	text-align: right;
+	border: 2px dotted green;
+}
+footer a
+{
+	text-decoration: none;
+	border: 2px dotted green;
+}
+.foot img
+{
+	width: 210px;
+	height: 260px;
+}
+.foot img:Hover
+{
+	width: 210px;
+	height: 260px;
+	opacity: .8;
+	transition: 1s;
+}
+.Category li
+{
+
+	list-style: disc;
+	width: 150px;
+}
+.Category li a
+{
+	text-decoration: none;
+	color: green;
+}
+.Category li a:Hover
+{
+	text-decoration: underline;
+	color: black;
+}
+h1
+{
+	position: absolute;
+	top: 100px;
+	left: 30%;
+	font-family: cursive;
+	font-size: 30px;
+	font-weight: boldrer;
+	text-decoration: overline;
+	color: rgb(204, 0, 102);
+}
