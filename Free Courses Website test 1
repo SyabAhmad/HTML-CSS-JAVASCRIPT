@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Website number 01</title>
+</head>
+<style type="text/css">
+	body
+	{
+		box-sizing: border-box;
+		font-family:initial|inherit;
+	}
+	#header1
+	{
+		padding: 10px;
+		display: inline-flex;
+		position: fixed;
+		border: snow;
+		background-color: white;
+		z-index: 3;
+		width: 100%;
+		height: 30px;
+	}
+	button, #link1, #link2 a
+	{
+		position: absolute;
+		left: 44rem;
+		word-spacing: 50px;
+		z-index: 3
+	}
+	#link1
+	{
+		left: 55rem;
+		position: relative;
+	}
+	#link2
+	{
+		position: absolute;
+		left: 22rem;
+	}
+	#a1
+	{
+		position: relative;
+		left: 6rem;
+
+	}
+	#a2
+	{
+		position: relative;
+		left: 9rem;
+	}
+	#a3
+	{
+		position: relative;
+		left: 12rem;
+		z-index: 3
+	}
+	#a4
+	{
+		position: relative;
+		left: 15rem;
+		z-index: 3
+	}
+	a
+	{
+		text-decoration: none;
+		color: black;
+	}
+	a:hover
+	{
+		text-decoration: underline;
+		opacity: .5;
+		transition: .5s;
+	}
+	.button1 button
+	{
+		background-color: #1877f2;
+		border: 1px solid white;
+		border-radius: 4px;
+		width: 79px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.button1 button:Hover
+	{
+		background-color: #42b72a;
+		border: 1px solid white;
+		border-radius: 4px;
+		width: 79px;
+		height: 30px;
+		overflow: hidden;
+		transition: 1s;
+		transform-style: all .5;
+	}
+	.button2 button
+	{
+		background-color: #1877f2;
+		border: 1px solid white;
+		border-radius: 4px;
+		width: 79px;
+		height: 30px;
+		overflow: hidden;
+		left: 800px;
+	}
+	.button2 button:Hover
+	{
+		background-color: #42b72a;
+		border: 1px solid white;
+		border-radius: 4px;
+		width: 79px;
+		height: 30px;
+		overflow: hidden;
+		transition: 1s;
+		transform-style: all .5;
+	}
+	.pic1 img
+	{
+		position: absolute;
+		top: 48rem;
+		width: 450px;
+		height: 350px;
+		padding-left: 80px;
+	}
+	.pic1d
+	{
+		position: absolute;
+		width: 40%;
+		left: 48%;
+		top: 50rem;
+		font-size: 28px;
+	}
+	
+	.pic1 img:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+	}
+
+	.pic1d:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+		padding-left: 10px;
+	}
+
+	.pic2 img
+	{
+		position: absolute;
+		top: 80rem;
+		width: 450px;
+		height: 350px;
+		padding-left: 630px;
+	}
+	.pic2d
+	{
+		position: absolute;
+		width: 40%;
+		left: 20px;
+		top: 83rem;
+		padding-left: 30px;
+		font-size: 28px;
+	}
+	.pic2 img:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+	}
+	.pic2d:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+		padding-left: 10px;
+	}
+	.pic3 img
+	{
+		position: absolute;
+		top: 120rem;
+		width: 450px;
+		padding-left: 80px;
+	}
+	.pic3d
+	{
+		position: absolute;
+		width: 40%;
+		left: 48%;
+		top: 123rem;
+		font-size: 28px;
+	}
+	.pic3 img:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+	}
+	.pic3d:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+		padding-left: 10px;
+	}
+	/* Dropdown Button */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 9rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: hidden;
+  min-height: 50px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px 12px 12px;
+  text-decoration: underline;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd; opacity: .5;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	.header2
+	{
+		position: absolute;
+		top: 11rem;
+		font-size: 32px;
+		justify-content: left;
+		width: 500px;
+		padding-left: 130px;
+		box-shadow: none;
+	}
+	.header2:Hover
+	{
+		box-shadow: 10px 10px 20px;
+		transition: 1s;
+	}
+	.header2 h3
+	{
+		box-shadow: 5px 5px 20px;
+	}
+	.header2:Hover h3
+	{
+		box-shadow: none;
+		transition: 1s;
+	}
+	.container .box {
+	  position: absolute;
+	  width: 10rem;
+	  height: 10rem;
+	  margin: 10rem;
+	  left: 50rem;
+	  top: 12rem;
+	}
+
+	.container .box:hover .imgBox {
+	  transform: translate(-3.5rem, -3.5rem);
+	  box-shadow: 10px 10px 20px;
+	}
+
+	.container .box:hover .content {
+	  transform: translate(3.5rem, 3.5rem);
+	}
+
+	.imgBox {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 2;
+	  transition: all 0.5s ease-in-out;
+	}
+
+	.imgBox img {
+	  width: 10rem;
+	  height: 10rem;
+	  object-fit: cover;
+	  resize: both;
+	}
+
+	.content {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  padding: 1.rem;
+	  display: flex;
+	  justify-content: center;
+	  background-color: #fff;
+	  z-index: 1;
+	  align-items: flex-end;
+	  text-align: center;
+	  transition: 0.5s ease-in-out;
+	}
+	.fa-facebook {
+  	background: #3B5998;
+  	color: white;
+  	width: 30px;
+  	height: 25px;
+  	text-align: center;
+  	border-radius: 6px;
+  	font-size: 20px;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    width: 30px;
+    height: 25px;
+    border-radius: 6px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .container2 {
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1000px;
+    min-height: 600px;
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .border {
+    height: 369px;
+    width: 390px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+  }
+  .border:hover {
+    border: 1px solid #fff;
+  }
+  .card {
+    height: 279px;
+    width: 200px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    position: absolute;
+    top: 150rem;
+    left: 10px;
+    padding-left: 0px;
+  }
+  .card0 {
+    background: url("7.jpeg") center center no-repeat;
+    background-size: 200px;
+    left: 30rem;
+  }
+  .card0:hover {
+    background: url("7.jpeg") left center no-repeat;
+    background-size: 400px;
+  }
+  .card0:hover h2 {
+    opacity: 1;
+  }
+  .card0:hover .fa {
+    opacity: 1;
+  }
+  .card1 {
+    background: url("3.jpg") center center no-repeat;
+    background-size: 200px;
+    left: 55rem;
+  }
+  .card1:hover {
+    background: url("3.jpg") left center no-repeat;
+    background-size: 400px;
+  }
+  .card1:hover h2 {
+    opacity: 1;
+  }
+  .card1:hover .fa {
+    opacity: 1;
+  }
+  .card2 {
+    background: url("8.jpeg") center center no-repeat;
+    background-size: 200px;
+    left: 4rem;
+  }
+  .card2:hover {
+    background: url("8.jpeg") left center no-repeat;
+    background-size: 400px;
+  }
+  .card2:hover h2 {
+    opacity: 1;
+  }
+  .card2:hover .fa {
+    opacity: 1;
+  }
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .fa {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.pic4
+{
+	text-align: center;
+}
+.footer1
+{
+	position: relative;
+	top: 130rem;
+	text-align: center;
+	width: 98%;
+	height: 200px;
+	display: inline-flex;
+	padding-left: 10px;
+	box-shadow: 10px 10px 30px;
+	font-size: 21px;
+	color: whitesmoke;
+	background-color: beige;
+
+}
+.footer1:Hover
+{
+	color: black;
+	transition: 1s;
+}
+#sec1, #sec2, #sec3
+{
+	padding-left: 10px;
+	width: 400px;
+	text-align: left;
+	box-shadow: 2px 2px 5px;
+}
+footer{
+	text-align: center;
+	background-color: blanchedalmond;
+	position: relative;
+	top: 131rem;
+}
+mark
+{
+	color: #1877f2;
+	background-color: white;
+}
+</style>
+<body>
+	<section>
+		<header id="header1">
+			<div id="a1"><a href="#">SDC-LOGO</a></div>
+			<div class="dropdown">
+			  <a href="#">What TO Learn</a>
+			  <div class="dropdown-content">
+			    <a href="#">Learn :: C++ Programming</a>
+			    <a href="#">Learn :: Python Programming</a>
+			    <a href="#">Learn :: Java Programming</a>
+			    <a href="#">Learn :: Html Langauge</a>
+			    <a href="#">Learn :: CSS Language</a>
+			    <a href="#">Learn :: Sql Programming</a>
+			    <a href="#">Learn :: C++ Programming</a>
+			    <a href="#">Learn :: Python Programming</a>
+			    <a href="#">Learn :: Java Programming</a>
+			    <a href="#">Learn :: Html Langauge</a>
+			    <a href="#">Learn :: CSS Language</a>
+			    <a href="#">Learn :: Sql Programming</a>
+			  </div>
+			</div>
+			<div id="a3"><a href="#">Contact</a></div>
+			<div id="a4"><a href="#">About</a></div>
+			<div class="button1"><button>Register</button></div>
+			<div class="button2"><button>LogIn</button></div>
+			<div id="link1"><a href="#" class="fa fa-facebook"></a></div>
+			<div id="link2"><a href="#" class="fa fa-youtube"></a></div>
+		</header>
+	</section>
+	<hr style="position: relative; top: 50px;">
+	<section>
+		<main> 
+			<!--------header detail---------->	
+			<div  class="header2">
+				<h3>Free Courses</h3>
+				<p>Now it is the time to upgrade your skills, what you all need is to just visit <mark>www.freecourses20-21.blogspot.com</mark> and you will get a lot of paidcourses for free, which means it will save your money</p>
+			</div>
+			<div class="container">
+			        <div class="box">
+			            <div class="imgBox">
+			                <img src="7.jpeg" alt="">
+			            </div>
+			            <div class="content">
+			                <h4>Syed Syab Ahmad</br><br>
+			                <span><strong>Half-Stack Web Developer</strong></span></h4>
+			            </div>
+			        </div>
+			        
+			<!--------pic 2---------->	
+			<div class="pic1">
+							<img src="3.jpg">
+						</div>
+						<div class="pic1d">
+							<h3>Welcome to Free Courses Acadmey</h3>
+							<p>We offer a best way to Teach for setuation we were facing like COVID-19, We offer <mark>Online Classes</mark> on <mark>ZOOM</mark> Download Zoom <a href="#"><mark>form
+								Here</mark></a>
+							</p>
+						</div>
+						<!--------pic 2---------->						
+						<div class="pic2d">
+							<h3>About Teaching</h3>
+							<p>We have Best Teachers and professors <mark>24/7 Online </mark>.
+							</p>
+						</div>
+						<div class="pic2">
+							<img src="4.jpg">
+						</div>
+
+						<!--------pic 3---------->
+						<div class="pic3">
+							<img src="5.jpg">
+						</div>
+						<div class="pic3d">
+							<h3>Environmental Section</h3>
+							<p>we a have best <mark>environment</mark> spacially for <mark>childerns</mark> they will love it.
+							</p>
+						</div>
+		</main>
+	</section><br><br><br>
+	<section class="pic4">
+		<div class="container2">
+		  <div class="card card0">
+		    <div class="border">
+		      <h2>Syed Syab Ahmad</h2>
+		      <div class="icons">
+		        <i class="fa fa-codepen" aria-hidden="true"></i>
+		        <i class="fa fa-instagram" aria-hidden="true"></i>
+		        <i class="fa fa-dribbble" aria-hidden="true"></i>
+		        <i class="fa fa-twitter" aria-hidden="true"></i>
+		        <i class="fa fa-facebook" aria-hidden="true"></i>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card card1">
+		    <div class="border">
+		      <h2>Silly</h2>
+		      <div class="icons">
+		        <i class="fa fa-codepen" aria-hidden="true"></i>
+		        <i class="fa fa-instagram" aria-hidden="true"></i>
+		        <i class="fa fa-dribbble" aria-hidden="true"></i>
+		        <i class="fa fa-twitter" aria-hidden="true"></i>
+		        <i class="fa fa-facebook" aria-hidden="true"></i>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card card2">
+		    <div class="border">
+		      <h2>Sayyad Fayaz Ahmad </h2>
+		      <div class="icons">
+		        <i class="fa fa-codepen" aria-hidden="true"></i>
+		        <i class="fa fa-instagram" aria-hidden="true"></i>
+		        <i class="fa fa-dribbble" aria-hidden="true"></i>
+		        <i class="fa fa-twitter" aria-hidden="true"></i>
+		        <i class="fa fa-facebook" aria-hidden="true"></i>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section>
+	<section>
+		<div class="footer1">
+			<div id="sec1"><p><b>SDC</b><br> <br> Software Development Company</p></div>
+			<div id="sec2"><p><b>Contact</b><br> <br> Cell# 0432 323 423 23 <br> Phone# +92 234567867 <br> WhatsApp# +92 1235467109 <br> Email Address: *****************@gmail.com</p></div>
+			<div id="sec3"><p><b>Pages</b> <br> <br> Privacy Policy <br> Contact <br> About</p></div>
+		</div>
+		<footer>Copyright &copy; 2021 : !Dev_SyabAhmad</footer>
+	</section>
+</body>
+</html>
